@@ -1,65 +1,17 @@
 heroku login
-D:
-cd other-projects
-dir
-cd micro-services
-dir
-cd spring
-ls
-dir
-cd learn-spring-boot
-dir
-cd ..
-dir
-cd ..
-mkdir cloud-support
-cd cloud-support
-dir
-mkdir heroku
-cd heroku
-git clone https://github.com/heroku/java-getting-started.git
-cd java-getting-started
-dir
+cd learn-spring-boot-heroku
 heroku create
-dir
 git push heroku master
 heroku ps:scale web=1
 heroku open
 heroku logs --tail
-pwd
-cd ..
-cd spring\learn-spring-boot\learn-spring-boot
-dir
-cd ..
-git pull
-dir
-cd learn-spring-boot
 git push heroku master
-pwd
-cd ..
-cd ..\cloud-support\heroku
-dir
-cd java-getting-started
 git push heroku master
-dir
-git status
 heroku ps:scale web=0
 heroku ps:scale web=1
-pwd
-cd ..
-cd spring\learn-spring-boot
-dir
-cd learn-spring-boot
-mvn clean install
 heroku local web
 git push heroku master
 heroku ps:scale web=0
-cd ..
-cd cloud-support
-dir
-cd heroku
-dir
-cd java-getting-started
 heroku ps:scale web=0
 heroku help
 heroku apps
@@ -67,27 +19,12 @@ heroku apps help
 heroku apps --help
 heroku apps:destroy
 heroku apps
-cd ..
-cd ...
-cd ..
-dir
-cd spring\learn-spring-boot
-dir
-cd learn-spring-boot
-dir
 heroku create
-dir
 git push heroku master
 heroku apps:destroy
 heroku apps
 heroku apps:destroy boiling-beach-91604
-cd D:\other-projects\micro-services\cloud-support\heroku\spring-boot-jersey
-dir
-git init
-dir
-cd ..
-cd D:\other-projects\micro-services\cloud-support\heroku\learn-spring-boot-heroku
-dir
+
 git init
 git add .
 git commit -m "First Commit"
